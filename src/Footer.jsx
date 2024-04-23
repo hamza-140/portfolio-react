@@ -4,7 +4,7 @@ import whatsapp from "../src/assets/whatsapp.png";
 const Footer = () => {
   return (
     <div>
-      <footer class="pt-20 text-gray-600 body-font relative">
+      <footer class="text-gray-600 body-font relative">
         <div id="contactForm" class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">

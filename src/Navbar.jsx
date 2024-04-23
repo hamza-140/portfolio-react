@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -9,65 +10,93 @@ const Navbar = () => {
           <div className="flex w-full md:w-auto md:order-1 justify-start">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a
-                  href="#educational-history"
+                <Link
+                  to="educational-history"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
                 >
                   Educational History
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#professional-skills"
+                <Link
+                  to="professional-skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
                 >
                   Professional Skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#professional-projects"
+                <Link
+                  to="professional-projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
                 >
                   Professional Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#hobbies"
+                <Link
+                  to="hobbies"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
                 >
-                  Hobbies
-                </a>
+                  Hobbies{" "}
+                </Link>
               </li>
               <li>
-                <a
-                  href="#life-ambitions"
+                <Link
+                  to="life-ambitions"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
                 >
                   Life Ambitions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#efforts-for-country"
+                <Link
+                  to="efforts-for-country"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
                 >
                   Efforts for Country
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* "Contact Me" on the right side */}
+
           <div className="md:order-2">
-            <a
-              href="#contactForm"
-              className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-white"
-              aria-current="page"
+            <Link
+              to="contactForm"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="block py-2 px-3 text-gray-900 rounded md:text-white md:p-0 md:dark:text-white"
             >
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
